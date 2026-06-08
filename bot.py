@@ -13,7 +13,7 @@ GROUP_ID = os.environ.get("GROUP_ID", "@paxta1380")
 ADMIN_IDS = os.environ.get("ADMIN_IDS", "").split(",")
 
 genai.configure(api_key=GOOGLE_API_KEY)
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel(models/gemini-1.5-flash)
 
 PROMPT = "Sen toypaxta korxonasi uchun kontent yozuvchisan. Namangan, O'zbekiston. O'zbek tilida, samimiy, insonday yoz. 3-5 jumla, oxirida buyurtma uchun chaqiruv, 3-5 hashtag, emoji qo'sh. Faqat post matnini yoz."
 
